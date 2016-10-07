@@ -1,0 +1,117 @@
+<template name="home">
+
+    <!-- {{>videoHeader}} -->
+
+    <!-- content -->
+    {{> homeHead}}
+
+    <section id="video-div" class='vidContain vid' style="background-color:black"></section>
+    <!-- /content -->
+
+
+    <h2 class="text-center" style="margin-top: 10px;">
+        <img src="{{quoteImage}}">
+    </h2>
+
+    <div class="content" style="padding: 0px;">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 col-sm-12" id="latest-announcement">
+                    <!-- announcement_posts -->
+                </div>
+            </div>
+            <!-- modules block -->
+            <div id="modules-block" class="row">
+                <!-- first row -->
+                <div class="col-md-30">
+                    <div class="row">
+                        <a href="https://magz-playroom.webe.com.my/news" data-internalonly="news" target="_blank" class="module module-internal col-md-12">
+                            <div class="module-highlights lazy" data-src="/images/modules/highlights.jpg">
+                                <div class="bg-layer">
+                                    highlights
+                                </div>
+                            </div>
+                        </a>
+                        <a target="_blank" data-internalonly="buzzhcd" href="http://packetnet.greenpacket.com/HCDPortal/Lists/Ticketing%20System%20for%20HCD/AllItems.aspx" class="module module-internal col-md-12">
+                            <div class="module-buzz">
+                                <div class="bg-layer">
+                                    buzzhcd
+                                </div>
+                            </div>
+                        </a>
+                        <a target="_blank" data-internalonly="engage+u" href="https://magz-playroom.webe.com.my/engage" class="module module-internal col-md-6">
+                            <div class="module-engage">
+                                <div class="bg-layer">
+                                    engage+u
+                                </div>
+                            </div>
+                        </a>
+                        <a target="_blank" data-internalonly="scool" href="/scool/trainingList" class="module module-internal col-md-6">
+                            <div class="module-scool">
+                                <div class="bg-layer">
+                                    scool
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-md-15">
+                    <div class="row">
+                        <a href="/playbook" target="_blank" class="module col-md-12">
+                            <div class="module-playbook">
+                                <div class="bg-layer">
+                                    playbook
+                                </div>
+                            </div>
+                        </a>
+                        <a target="_blank" href="http://www.jobstreet.com.my/career/webe.htm" class="module col-md-12">
+                            <div class="module-career tall">
+                                <div class="bg-layer">
+                                    career
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-md-30">
+                    <div class="row">
+                        <a href="https://magz-playroom.webe.com.my/marketbeats" data-internalonly="marketbeats" target="_blank" class="module module-internal col-md-12">
+                            <div class="module-marketbeats">
+                                <div class="bg-layer">
+                                    marketbeats
+                                </div>
+                            </div>
+                        </a>
+                        <a target="_blank" data-internalonly="facilities" href="http://packetnet.greenpacket.com/effi" class="module module-internal col-md-6">
+                            <div class="module-facilities">
+                                <div class="bg-layer">
+                                    facilities
+                                </div>
+                            </div>
+                        </a>
+                        <a target="_blank" data-internalonly="toolkit" href="http://packetnet.greenpacket.com/emptoolkit/default.aspx" class="module module-internal col-md-6">
+                            <div class="module-toolkit">
+                                <div class="bg-layer">
+                                    toolkit
+                                </div>
+                            </div>
+                        </a>
+                        <a target="_blank" data-internalonly="selfservice" href="http://192.168.250.91/eSolution/Login.aspx" class="module module-internal col-md-12">
+                            <div class="module-selfservice">
+                                <div class="bg-layer">
+                                    selfservice
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+
+
+            </div>
+            <!-- /modules block -->
+        </div>
+    </div>
+
+{{>footer}}
+
+</template>

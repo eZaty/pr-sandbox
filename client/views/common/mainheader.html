@@ -1,0 +1,38 @@
+<template name="mainHeader">
+
+    <div class="navbar bg-purple-700 pt-5 pb-5">
+        <div class="container">
+            <div class="navbar-header">
+                <a class="navbar-brand ml-10" href="/"><img src="/images/webe-playroom-beta.png" alt=""></a>
+
+                <!-- <span class="navbar-brand text-white"><i class="icon-arrow-right13"></i></span>
+                <a class="navbar-brand text-white" href="#">career@webeme</a> -->
+
+                <ul class="nav navbar-nav visible-xs-block">
+                    <li><a data-toggle="collapse" data-target="#navbar-mobile"><i class="icon-tree5"></i></a></li>
+                    <li><a class="sidebar-mobile-main-toggle"><i class="icon-paragraph-justify3"></i></a></li>
+                </ul>
+            </div>
+
+            <div class="navbar-collapse collapse" id="navbar-mobile">
+                <div class="navbar-collapse collapse" id="navbar-top">
+                    <ul class="nav navbar-nav navbar-right">
+                        <li class="dropdown dropdown-user">
+                            <a class="dropdown-toggle" data-toggle="dropdown" style="color:white;background-color:transparent;">
+                                <i class="icon-user position-left"></i>
+                                <span>{{currentUser.profile.nickName}}</span>
+                            </a>
+
+                            <ul id="logout-toggle" class="dropdown-menu dropdown-menu-right">
+                                <li><a href="/profile"><i class="icon-gear"></i> My profile</a></li>
+                                <li class="divider"></li>
+                                <li><a href="#logout" class="logout-btn"><i class="icon-switch2"></i> Logout</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</template>

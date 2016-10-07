@@ -1,0 +1,40 @@
+<template name="adminUserList">
+
+	<!-- title -->
+	<div class="page-header">
+		<div class="page-header-content">
+			<div class="page-title">
+				<h4><i class="icon-arrow-left52 position-left"></i> <span class="text-semibold">Admin</span> - Users list</h4>
+			</div>
+			<!-- <div class="heading-elements">
+			<div class="heading-btn-group">
+			<a href="#" class="btn bg-blue btn-labeled heading-btn" id="migrate-photo"><b><i class="icon-task"></i></b> Migrate photos</a>
+		</div>
+	</div> -->
+	<a class="heading-elements-toggle"><i class="icon-menu"></i></a>
+</div>
+
+<div class="breadcrumb-line">
+	<ul class="breadcrumb">
+		<li><a href="/__admin"><i class="icon-home2 position-left"></i> Admin</a></li>
+		<li><a href="/__admin/users">Users</a></li>
+		<li class="active">Users list</li>
+	</ul>
+	<a class="breadcrumb-elements-toggle"><i class="icon-menu-open"></i></a>
+</div>
+</div>
+<!-- /title -->
+
+
+<!-- content -->
+<div class="content">
+
+	<div class="panel panel-flat">
+		<div class="panel-body">
+			{{> tabular id="userTable" table=TabularTables.Users class="table striped"}}
+		</div>
+	</div>
+</div>
+<!-- /content -->
+
+</template>
