@@ -1,0 +1,22 @@
+#demo #logo-placeholder {
+    margin-top: 50px;
+    background-color: black;
+    display: table;
+    padding: 10px;
+}
+#demo #logo-placeholder img {
+    height: 30px;
+}
+
+#demo .header div {
+    font-weight: bold;
+    border-bottom: 1px solid #ccc
+}
+
+#demo .body div {
+    margin-top: 5px;
+}
+
+#demo .table-detail {
+    margin-top: 20px;
+}

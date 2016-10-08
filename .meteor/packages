@@ -45,3 +45,4 @@ jquery
 blaze-html-templates
 session
 cfs:gridfs
+qinghai:lazyload
