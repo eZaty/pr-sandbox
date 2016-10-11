@@ -24,7 +24,35 @@ Template.demo.events({
         var elem = $(e.currentTarget);
         var userId = elem.data('userid');
         Session.set('selectedUser', userId);
-    }
+    },
+
+    'click #add-user': function(e) {
+        e.preventDefault();
+        var elem = $(e.currentTarget);
+        console.log("message");
+    },
+
+    'click #add-now': function(e) {
+        e.preventDefault();
+        var elem = $(e.currentTarget);
+        var params = {
+            name: $('#input-name').val(),
+            username: $('#input-name').val(),
+            password: 'Password!',
+            email: $('#input-email').val(),
+            title: $('#input-title').val(),
+            department: $('#input-department').val(),
+            roles: ['employee']
+        }
+        // console.log("params", params);
+
+        Meteor.call('addEmployee', params, function(error, result){
+            if(error) console.log("error", error);
+            if(result){
+                console.log("result", result);
+            }
+        });
+    },
     // 'click a.module-internal': function(e) {
     //     e.preventDefault();
     //     var elem = $(e.currentTarget);
